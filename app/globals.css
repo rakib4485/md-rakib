@@ -2,7 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@layer base {
+  body{
+    @apply font-primary bg-primary text-white leading-loose;
+  }
+  .h1{
+    @apply text-[30px] xl:text-[50px] leading-[1.1] font-semibold;
+  }
+  .h2{
+    @apply text-[25px] xl:text-[40px] leading-[1.1] font-semibold;
+  }
+  .h3{
+    @apply text-[18px] xl:text-[22px] leading-[1.1] font-semibold;
+  }
+}
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -25,3 +40,9 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+} */
